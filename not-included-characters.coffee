@@ -18,7 +18,7 @@ message.format 'error', (text) ->
 notIncludedCharacters = (string, include= '') ->
 	found = []
 	if not (allString string, include)
-		message.error 'not-included-characters requires string type arguments'
+		message.error 'requires string type arguments'
 	else for char in string
 		if include.indexOf(char) < 0
 			if found.indexOf(char) < 0
@@ -27,5 +27,7 @@ notIncludedCharacters = (string, include= '') ->
 
 
 notIncludedCharacters.onError = (handler) -> message.on 'error', handler
+
+
 
 module.exports = notIncludedCharacters

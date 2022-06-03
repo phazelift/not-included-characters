@@ -20,7 +20,7 @@
     found = [];
 
     if (!allString(string, include)) {
-      message.error('not-included-characters requires string type arguments');
+      message.error('requires string type arguments');
     } else {
       for (i = 0, len = string.length; i < len; i++) {
         char = string[i];

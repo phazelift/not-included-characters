@@ -13,8 +13,8 @@ const notIncludedChars = require('@sygn/not-included-characters');
 const LOWER_ALPHAS = 'abcdefghijklmnopqrstuvwxyz';
 
 // the first argument is the query, the second the 'included' characters
-notIncludedChars('Find Not Included Characters!', LOWER_ALPHAS);
-// [ 'F', ' ', 'N', 'I', 'C', '!' ]
+notIncludedChars(' finD nOt iNcluded charactErs! ', LOWER_ALPHAS).join('').trim();
+// DONE!
 
 
 // you can add a handler for handling type errors (see: message-events npm package)
