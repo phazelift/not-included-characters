@@ -1,6 +1,6 @@
 {
   "name": "@sygn/not-included-characters",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Find characters in a string that do not occur in another string",
   "main": "not-included-characters.min.js",
   "publishConfig": {
